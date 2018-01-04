@@ -1,0 +1,9 @@
+com.cleo.lexicom
+com.cleo.lexicom.beans
+com.cleo.lexicom.certmgr.external
+com.cleo.lexicom.edi
+com.cleo.lexicom.external
+com.cleo.lexicom.external.pojo.trigger
+com.cleo.lexicom.scripts
+com.cleo.security.hashing
+com.cleo.util.logger

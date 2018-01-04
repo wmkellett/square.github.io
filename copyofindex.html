@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Developer.Cleo.Com</title>
+    <title>Square Open Source</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
     <link href="/assets/base.css" media="screen" rel="stylesheet" type="text/css" />
@@ -16,15 +16,15 @@
         <section class="profile-masthead" id="masthead">
           <header class="profile-logo">
             <div class="profile-logo-image">
-              <img alt="Square Open Source " src="/images/trianglelogo.png" />
+              <img alt="Square Open Source " src="/images/logo.png" />
             </div>
             <div class="profile-name">
-              <h1>Cleo Shared Developer Resources</h1>
+              <h1>Square Open Source</h1>
             </div>
           </header>
           <aside class="profile-summary">
             <div class="summary-location summary-module">
-              <a href="http://github.com/cleo">github.com/cleo</a>
+              <a href="http://github.com/square">github.com/square</a>
             </div>
           </aside>
         </section>
@@ -33,14 +33,15 @@
           <!-- TODO header? -->
 
           <div class="profile-description">
-            <p>Here are some resources to help you make your system better.</p>
+            <p>As a company built on open source, here are some of the internally-developed libraries we have contributed back to the community.</p>
           </div>
 
           <article class="profile-menu" id="menu">
             <nav class="menu-navigation">
               <ul class="menu-navigation-list">
-                <li class="menu-navigation-list-item"><a href="#APIs">APIs</a></li>
-                <li class="menu-navigation-list-item"><a href="#docs">Documentation</a></li>
+                <li class="menu-navigation-list-item"><a href="#android">Android</a></li>
+                <li class="menu-navigation-list-item"><a href="#go">Go</a></li>
+                <li class="menu-navigation-list-item"><a href="#ios">iOS</a></li>
                 <li class="menu-navigation-list-item"><a href="#java">Java</a></li>
                 <li class="menu-navigation-list-item"><a href="#javascript">JavaScript</a></li>
                 <li class="menu-navigation-list-item"><a href="#ruby">Ruby</a></li>
@@ -48,36 +49,198 @@
               </ul>
             </nav>
 
-            <div id="APIs" class="menu-category">
-              <h3 class="menu-category-name">APIs</h3>
+            <div id="android" class="menu-category">
+              <h3 class="menu-category-name">Android</h3>
+              <ol class="menu-category-list has-images">
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">android-times-square</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/android-times-square" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">Standalone Android widget for picking a single date from a calendar view.</p>
+                </div>
+                <div class="menu-item-image has-meta-content">
+                  <img src="/repo_images/android-times-square.jpg" />
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">assertj-android</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/assertj-android/" target="_blank">Website</a> &middot; <a href="https://github.com/square/assertj-android" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">A set of AssertJ helpers geared toward testing Android.</p>
+                </div>
+                <div class="menu-item-image has-meta-content">
+                  <img src="/repo_images/assertj-android.jpg" />
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">dagger</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/dagger/" target="_blank">Website</a> &middot; <a href="https://github.com/square/dagger" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">A fast dependency injector for Android and Java.</p>
+                </div>
+                <div class="menu-item-image has-meta-content">
+                  <img src="/repo_images/dagger.jpg" />
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">otto</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/otto/" target="_blank">Website</a> &middot; <a href="https://github.com/square/otto" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">An enhanced Guava-based event bus with emphasis on Android support.</p>
+                </div>
+                <div class="menu-item-image has-meta-content">
+                  <img src="/repo_images/otto.jpg" />
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">picasso</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/picasso/" target="_blank">Website</a> &middot; <a href="https://github.com/square/picasso" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">A powerful image downloading and caching library for Android</p>
+                </div>
+                <div class="menu-item-image has-meta-content">
+                  <img src="/repo_images/picasso.jpg" />
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">pollexor</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/pollexor/" target="_blank">Website</a> &middot; <a href="https://github.com/square/pollexor" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">Java client for the Thumbor image service which allows you to build URIs in an expressive fashion using a fluent API.</p>
+                </div>
+                <div class="menu-item-image has-meta-content">
+                  <img src="/repo_images/pollexor.jpg" />
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">spoon</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/spoon/" target="_blank">Website</a> &middot; <a href="https://github.com/square/spoon" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">Distributing instrumentation tests to all your Androids.</p>
+                </div>
+                <div class="menu-item-image has-meta-content">
+                  <img src="/repo_images/spoon.jpg" />
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">wire</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/wire" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">Clean, lightweight protocol buffers for Android and Java.</p>
+                </div>
+                <div class="menu-item-image has-meta-content">
+                  <img src="/repo_images/wire.jpg" />
+                </div>
+              </li>
+              </ol>
               <ol class="menu-category-list">
               <li class="menu-item">
                 <div class="menu-item-info">
-                  <h4 class="menu-item-name">Connector Shell</h4>
-                  <span class="menu-item-price"><a href="ConnectorShell.html" target="_blank">HTML</a></span>
-                  <p class="menu-item-description"></p>
+                  <h4 class="menu-item-name">leakcanary</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/leakcanary" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">A memory leak detection library for Android and Java.</p>
                 </div>
-                </li>
+              </li>
               <li class="menu-item">
                 <div class="menu-item-info">
-                  <h4 class="menu-item-name">REST</h4>
-                  <span class="menu-item-price"><a href="https://developer.cleo.com/api/getting-started/overview.html" target="_blank">developer.cleo.com</a></span>
-                  <p class="menu-item-description"></p>
+                  <h4 class="menu-item-name">moshi</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/moshi/1.x/moshi/" target="_blank">Website</a> &middot; <a href="https://github.com/square/moshi" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">A modern JSON library for Android and Java.</p>
                 </div>
-                </li>
+              </li>
               <li class="menu-item">
                 <div class="menu-item-info">
-                  <h4 class="menu-item-name">Java</h4>
-                  <span class="menu-item-price"><a href="/VersaLexAPI/javadoc/index.html" target="_blank">HTML</a></span>
-                  <span class="menu-item-price"><a href="/VersaLexAPI/readme.pdf" target="_blank">PDF</a></span>
-                  <p class="menu-item-description"></p>
+                  <h4 class="menu-item-name">okhttp</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/okhttp/" target="_blank">Website</a> &middot; <a href="https://github.com/square/okhttp" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">An HTTP+HTTP/2 client for Android and Java applications.</p>
                 </div>
-                </li>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">retrofit</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/retrofit/" target="_blank">Website</a> &middot; <a href="https://github.com/square/retrofit" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">Type-safe HTTP client for Android and Java by Square, Inc.</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">seismic</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/seismic" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">Android device shake detection.</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">sqlbrite</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/sqlbrite/0.x/sqlbrite/index.html" target="_blank">Website</a> &middot; <a href="https://github.com/square/sqlbrite" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">A lightweight wrapper around SQLiteOpenHelper which introduces reactive stream semantics to SQL operations.</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">tape</h4>
+                  <span class="menu-item-price"><a href="http://square.github.io/tape/" target="_blank">Website</a> &middot; <a href="https://github.com/square/tape" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">A lightning fast, transactional, file-based FIFO for Android and Java.</p>
+                </div>
+              </li>
               </ol>
-
             </div>
-            <div id="docs" class="menu-category">
-              <h3 class="menu-category-name">Documentation</h3>
+            <div id="go" class="menu-category">
+              <h3 class="menu-category-name">Go</h3>
+              <ol class="menu-category-list">
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">certigo</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/certigo" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">A utility to examine and validate certificates in a variety of formats</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">certstrap</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/certstrap" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">Tools to bootstrap CAs, certificate requests, and signed certificates.</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">ghostunnel</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/ghostunnel" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">A simple SSL/TLS proxy with mutual authentication for securing non-TLS services</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">go-jose</h4>
+                  <span class="menu-item-price"><a href="https://gopkg.in/square/go-jose.v1" target="_blank">Website</a> &middot; <a href="https://github.com/square/go-jose" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">An implementation of JOSE standards in Golang.</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">gssh</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/gssh" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">simple command line to utility to run commands on multiple hosts in parallel</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">metrics</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/metrics" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">Metrics Query Engine</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">squalor</h4>
+                  <span class="menu-item-price"><a href="https://github.com/square/squalor" target="_blank">GitHub</a></span>
+                  <p class="menu-item-description">Go SQL utility library</p>
+                </div>
+              </li>
+              </ol>
+            </div>
+            <div id="ios" class="menu-category">
+              <h3 class="menu-category-name">iOS</h3>
               <ol class="menu-category-list has-images">
               <li class="menu-item">
                 <div class="menu-item-info">
